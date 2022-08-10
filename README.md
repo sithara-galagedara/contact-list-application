@@ -5,7 +5,7 @@ Available Functions
 1. Search People By Name
 2. Visibility of All the People Details
 
-###Backend Technical Implementations 
+##Backend Technical Implementations 
 
 1.Spring Data JPA and the configurations added. This is only a Database ready system. Configurations and entities implemented in the 
 package and the config in case of a connecting a database. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class to run with a database
