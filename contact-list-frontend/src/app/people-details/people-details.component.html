@@ -1,0 +1,22 @@
+<div style="width: 50%;
+    margin: auto;">
+  <h2>Contact List System</h2>
+  <label>Search by Name</label>
+  <input name="box" cols="30" rows="5" [(ngModel)]="peopleName" style="margin-left: 2%"/><br>
+  <button type="submit" class="btn btn-primary" (click)="searchByName()"
+          style="margin-left: 18%; margin-top: 1%; margin-bottom: 2%"> Search
+  </button>
+
+  <button type="submit" class="btn btn-primary" (click)="reset()"
+          style="margin-left: 2%; margin-top: 1%; margin-bottom: 2%"> Reset
+  </button>
+
+  <ag-grid-angular
+    style="width: 600px; height: 500px;"
+    class="ag-theme-alpine"
+    [pagination]=true
+    [paginationPageSize]=10
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+  </ag-grid-angular>
+</div>

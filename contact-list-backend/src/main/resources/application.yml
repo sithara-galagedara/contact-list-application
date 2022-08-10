@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: Contact List
+  jpa:
+    show-sql: false
+    database-platform: # Add the dialect here. E.g:  org.hibernate.dialect.OracleSQLDialect
+    generate-ddl: false
+  datasource:
+    url: # Add the database URL here E.g: jdbc:oracle:thin:@localhost:1521:xe
+    username: # Add the user name
+    password: # Add the password
+    driverClassName: # Add the driver class name here
+
+server:
+  port: 8090
+
+logging:
+  level:
+    org:
+      hibernate: ERROR
+      springframework:
+        web: INFO
+    net:
+      guides: DEBUG
+
+
+
+
