@@ -5,14 +5,13 @@ Available Functions
 1. Search People By Name
 2. Visibility of All the People Details
 
-###Backend Technical Implementations 
+### Backend Technical Implementations 
 
-1.Spring Data JPA and the configurations added. This is only a Database ready system. Configurations and entities implemented in the 
-package and the config in case of a connecting a database. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class to run with a database
+1.Spring Data JPA and the configurations added. At the moment this is only a Database ready system and database configurations and entities added to connect a database while going forward. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class when database connected.
 
 2.For all the package classes related logins added the LoggingAspect
 
-3.People Entity is the mapping file for the database and to transfer the data from persistence layer to front-end we uses PeopleDTO class
+3.PeopleEntity class is the mapping for the database and to transfer the data from persistence layer to front-end, uses PeopleDTO class. SharedEntity class added to keep the record audit details and this class gets inherits from the PeopleEntity.
 
 4.CSV file is available in the resource folder and when loading the application from the front-end it will show all the fetched data from CSV. At the moment CSV file uses as the datasource
 
@@ -26,21 +25,21 @@ package and the config in case of a connecting a database. Make sure to remove t
 
 2.Run the application
 
-4.Port is 8090 and access the backend with URL http://localhost:8090
+4.Configured port is 8090 and access the backend with URL http://localhost:8090
 
 Shows all the people : http://localhost:8090/people
 
 Search by name : http://localhost:8090/people/search?personName=Moe%20Szyslak
 
-###Frontend Technical Implementations 
+### Frontend Technical Implementations 
 
-1.Frontend contains only a single component people
+1.Frontend contains only a single component People
 
-2.A Services added in to the component to handle all backend calls 
+2.Http Service added in to the component to handle all backend calls 
 
 3.To change the base url refer the environment file
 
-###How to run the Frontend ?
+### How to run the Frontend ?
 
 1.Install the latest node version
 
@@ -49,4 +48,6 @@ Search by name : http://localhost:8090/people/search?personName=Moe%20Szyslak
 3.Perform a npm install to install all the dependencies
 
 4.Type ng serve to run the application
+
+5.Navigate to the http://localhost:4200/
 
