@@ -45,7 +45,7 @@ class TestPerson {
     }
 
     @Test
-    void TestLoadAllContacts() {
+    void TestLoadAllPeople() {
         ResponseEntity<List<PeopleDTO>> responseEntity = peopleController.person();
         Assertions.assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
         Assertions.assertTrue((Objects.requireNonNull(responseEntity.getBody()).size() > 0),
@@ -53,7 +53,7 @@ class TestPerson {
     }
 
     @Test
-    void TestSearchContacts() {
+    void TestSearchPeople() {
         ResponseEntity<List<PeopleDTO>> responseEntity = peopleController.searchPerson("Homer");
         Assertions.assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
         Assertions.assertTrue((Objects.requireNonNull(responseEntity.getBody()).size() > 0),

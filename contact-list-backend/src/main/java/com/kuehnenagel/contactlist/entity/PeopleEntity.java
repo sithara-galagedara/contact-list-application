@@ -1,10 +1,11 @@
 package com.kuehnenagel.contactlist.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "contact_list_person")
-public class PeopleEntity {
+public class PeopleEntity extends SharedEntity{
     private Integer peopleID;
     private String peopleName;
     private String peopleImageURL;
@@ -37,5 +38,18 @@ public class PeopleEntity {
 
     public void setPeopleImageURL(String peopleImageURL) {
         this.peopleImageURL = peopleImageURL;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PeopleEntity that = (PeopleEntity) o;
+        return Objects.equals(peopleID, that.peopleID) && Objects.equals(peopleName, that.peopleName) && Objects.equals(peopleImageURL, that.peopleImageURL);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(peopleID, peopleName, peopleImageURL);
     }
 }
