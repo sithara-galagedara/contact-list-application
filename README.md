@@ -7,8 +7,7 @@ Available Functions
 
 ### Backend Technical Implementations 
 
-1.Spring Data JPA and the configurations added. This is only a Database ready system. Configurations and entities implemented in the 
-package and the config in case of a connecting a database. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class to run with a database
+1.Spring Data JPA and the configurations added. This is only a Database ready system. Configurations and entities implemented plug in a database. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class to run with a database
 
 2.For all the package classes related logins added the LoggingAspect
 
