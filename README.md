@@ -7,6 +7,7 @@ Technologies Used
 1. Spring Boot
 2. Angular
 3. Maven
+4. Java 8
 
 Available Functions
 
