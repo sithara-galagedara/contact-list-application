@@ -2,6 +2,12 @@
 
 ![alt text](https://github.com/sithara-galagedara/contact-list-application/blob/main/application-snapshot.PNG)
 
+Technologies Used 
+
+1. Spring Boot
+2. Angular
+3. Maven
+
 Available Functions
 
 1. Search People By Name
