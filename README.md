@@ -5,7 +5,7 @@ Available Functions
 1. Search People By Name
 2. Visibility of All the People Details
 
-##Backend Technical Implementations 
+### Backend Technical Implementations 
 
 1.Spring Data JPA and the configurations added. This is only a Database ready system. Configurations and entities implemented in the 
 package and the config in case of a connecting a database. Make sure to remove the exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class} part from the ContactListApplication class to run with a database
@@ -32,7 +32,7 @@ Shows all the people : http://localhost:8090/people
 
 Search by name : http://localhost:8090/people/search?personName=Moe%20Szyslak
 
-###Frontend Technical Implementations 
+### Frontend Technical Implementations 
 
 1.Frontend contains only a single component people
 
@@ -40,7 +40,7 @@ Search by name : http://localhost:8090/people/search?personName=Moe%20Szyslak
 
 3.To change the base url refer the environment file
 
-###How to run the Frontend ?
+### How to run the Frontend ?
 
 1.Install the latest node version
 
