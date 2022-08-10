@@ -1,6 +1,6 @@
 ## Contact List Web System
 
-![alt text](https://github.com/sithara-galagedara/contact-list-application/blob/main/application-snapshot.PNG)?raw=true)
+![alt text](https://github.com/sithara-galagedara/contact-list-application/blob/main/application-snapshot.PNG))
 
 Available Functions
 
