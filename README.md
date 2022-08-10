@@ -1,5 +1,7 @@
 ## Contact List Web System
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/application-snapshot.PNG?raw=true)
+
 Available Functions
 
 1. Search People By Name
