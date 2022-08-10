@@ -11,7 +11,7 @@ Available Functions
 
 2.For all the package classes related logins added the LoggingAspect
 
-3.People Entity is the mapping file for the database and to transfer the data from persistence layer to front-end, source uses PeopleDTO class
+3.PeopleEntity class is the mapping for the database and to transfer the data from persistence layer to front-end, uses PeopleDTO class. SharedEntity class added to keep the record audit details and this class gets inherits from the PeopleEntity.
 
 4.CSV file is available in the resource folder and when loading the application from the front-end it will show all the fetched data from CSV. At the moment CSV file uses as the datasource
 
